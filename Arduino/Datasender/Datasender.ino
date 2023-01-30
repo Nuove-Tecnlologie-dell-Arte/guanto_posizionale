@@ -38,12 +38,12 @@ void loop()
 	float ax,ay,az;
 	accelemeter.getXYZ(&x,&y,&z);  
    
-	/*Serial.print("x = ");    g value
+	Serial.print("x = ");    /*g value*/
     Serial.println(x); 
     Serial.print("y = ");
     Serial.println(y);   
     Serial.print("z = ");
-    Serial.println(z);*/
+    Serial.println(z);
 	
 	accelemeter.getAcceleration(&ax,&ay,&az);
   /*accelerazione*/
@@ -53,5 +53,5 @@ void loop()
 	Serial.println();
 	Serial.print(az);
 	Serial.println();
-	delay (1000);
+	delay (300);
 }
